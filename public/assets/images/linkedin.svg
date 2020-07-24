@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9F731E88-6BF2-45F7-9CDE-1055070D638D</title>
+    <g id="UI---Opção-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0-Home---Desktop" transform="translate(-449.000000, -1406.000000)">
+            <g id="Fale-com-a-gente" transform="translate(369.000000, 1246.000000)">
+                <g id="Contatos" transform="translate(0.000000, 40.000000)">
+                    <g id="Assets/Icons/Social/Linkedin" transform="translate(80.000000, 120.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M6.735,5.84782609 C6.735,6.86856522 5.9025,7.69565217 4.875,7.69565217 C3.8475,7.69565217 3.015,6.86856522 3.015,5.84782609 C3.015,4.82782609 3.8475,4 4.875,4 C5.9025,4 6.735,4.82782609 6.735,5.84782609 Z M6.75,9.17391304 L3,9.17391304 L3,21 L6.75,21 L6.75,9.17391304 Z M12.7365,9.17391304 L9.0105,9.17391304 L9.0105,21 L12.73725,21 L12.73725,14.7920435 C12.73725,11.3403043 17.259,11.0579565 17.259,14.7920435 L17.259,21 L21,21 L21,13.5118696 C21,7.68752174 14.3085,7.89965217 12.7365,10.7667391 L12.7365,9.17391304 Z" id="Linkedin" fill="#494D4D" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
