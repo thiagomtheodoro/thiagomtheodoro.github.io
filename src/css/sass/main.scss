@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     overflow-x:hidden;
-    width: 100%;
+    max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -111,6 +111,11 @@ img {
         &--image{
             z-index: 1;
             position: relative;
+
+            .has-mobile{
+                max-width: 175px;
+
+            }
         }
     }
 
@@ -124,6 +129,9 @@ img {
     padding: 40px 29px 40px 0;
     background: #fff;
 
+    .has-mobile{
+        max-width: 170px;
+    }
 
     a{
         display: block;
@@ -308,6 +316,8 @@ img {
 .c-footer{
     padding: 27px 20px;
     background-color: $foo;
+    position: relative;
+    z-index: 2;
 
     &__content{
         display: flex;
@@ -346,7 +356,7 @@ img {
 
 /* page */
 
-@media (min-width: $desktop){
+@media (min-width: $desktop + 1){
     .s-container{
         width: 1200px;
     }
@@ -377,11 +387,11 @@ img {
     
 }
 
-@media (min-width: $nootbook) and (max-width: $desktop - 1px){
+@media (min-width: $nootbook + 1) and (max-width: $desktop){
     .s-container{
         width: 980px;
     }
-    .s-container-fluid{
+    /* .s-container-fluid{
         width: 100%;
     }
     .s-container-float{
@@ -400,10 +410,54 @@ img {
             margin-right: -350px;
             margin-left: 65px;
         }
+    } */
+    .c-about{
+        width: 90%; 
+
+        &--title{
+            font-size: 90px; 
+        }
+    }
+
+    .c-header__bottom{
+        overflow: hidden;
+    }
+
+    .c-bio{
+        &--photo{
+
+            &:after{
+                max-height: 305px;
+            }
+        }
+    }
+
+    .c-contact{
+        flex-direction: column;
+
+        &__left{
+            &--great-title{
+    
+                h2{
+                    font-size: 85px;
+                }
+            }
+        }
+    
+        &__right{
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+
+            img{
+                /* max-width: 75%; */
+                margin: 50px -20px 70px;
+            }
+        }
     }
 }
 
-@media (min-width: $tablet) and (max-width: $nootbook - 1px){
+@media (min-width: $tablet) and (max-width: $nootbook){
     .s-container{
         width: 738px;
     }
@@ -490,6 +544,8 @@ img {
             position: absolute;
             top: 0;
             right: -20px;
+
+
         }
     }
 
@@ -516,6 +572,14 @@ img {
         padding-bottom: 0;
     
         &__left{
+            &--great-title{
+                h2{
+                    font-size: 48px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 50px;
+                }
+            }
     
             &--info{
                 h3{
@@ -530,21 +594,8 @@ img {
             position: relative;
 
             img{
-                max-width: 112%;
-                margin: 50px -20px 70px;
-            }
-        }
-    }
-
-    .c-contact{
-        &__left{
-            &--great-title{
-                h2{
-                    font-size: 48px;
-                    font-weight: bold;
-                    letter-spacing: 0;
-                    line-height: 50px;
-                }
+                max-width: 100%;
+                margin: 50px 0 70px;
             }
         }
     }
@@ -600,4 +651,16 @@ img {
         position: relative;
     }
     
+}
+@media (max-width: 374px){
+
+    .c-header{
+        &__top{
+            &--image{
+                .has-mobile{
+                    max-width: 130px;
+                }
+            }
+        }
+    }
 }

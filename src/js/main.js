@@ -2,7 +2,9 @@
 const windowWidth = window.innerWidth;
 
 window.addEventListener('load', function(){
-    AOS.init();
+    AOS.init({
+        once: true
+    });
 
     if (windowWidth >= 1024) {
         window.addEventListener('scroll', (e) => {
